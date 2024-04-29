@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Abhinash Hospital</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+    <section class="sdhv"></section>
+    <header class="header">
+        <a href="#" class="logo"> <i class="fas fa-heartbeat"></i> Abhinash Memorial Hospital</a>
+        <!-- <a href="#"> <i class="fa-brands fa-whatsapp"></i>Available from 11.00am to 5:00pm</a>-->
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="services.html">Services</a>
+            <a href="Doctor.html">doctor </a>
+            <a href="Book.html">Booking </a>
+            <a href="review.html">reviews </a>
+        </nav>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </header>
+    <br><br><br>
+
+
+    <center>
+        <div>
+            <br /><br />
+            <table width="930px">
+                <tr>
+
+                    <td>
+                        <h4 align="left"><b> Pre - Registration Form</b></h4>
+                    </td>
+                </tr>
+            </table>
+            <form action="connect.php" method="post">
+                <div style="border-style: solid; border-width: 3px; width: 910px;">
+                    <table width="908px" height="400" style="background-image: url('images/back.jpg')">
+
+                        <tr>
+                            <td width="50px"></td>
+                            <td width="200px">
+                                <h6><i> Name of the Patient*</i></h6>
+                            </td>
+                            <td width="18px">
+                                <h5><b> :</b></h5>
+                            </td>
+                            <td width="650px">
+                                <select name="ddPtSName" id="ddPtSName" style="width:75px;">
+                                    <option selected="selected" value=""></option>
+                                    <option value="Mr.">Mr.</option>
+                                    <option value="Mrs.">Mrs.</option>
+                                    <option value="Ms.">Ms.</option>
+                                    <option value="Miss">Miss</option>
+                                    <option value="Master">Master</option>
+                                    <option value="Baby">Baby</option>
+                                    <option value="Dr.">Dr.</option>
+
+                                </select> &nbsp;
+
+                                <input name="txtPtName" type="text" id="txtPtName" style="width:300px;" /><span
+                                    id="RequiredFieldValidator1" style="visibility:hidden;">Enter Patient Name</span>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td width="50px"></td>
+                            <td width="200px">
+                                <h6><i> Name of the Gaurdian*</i></h6>
+                            </td>
+                            <td width="18px">
+                                <h6><b> :</b></h6>
+                            </td>
+                            <td width="650px">
+                                <select name="ddGType" id="ddGType" style="width:75px;">
+                                    <option selected="selected" value=""></option>
+                                    <option value="S/O">S/O</option>
+                                    <option value="D/O">D/O</option>
+                                    <option value="W/O">W/O</option>
+                                    <option value="C/O">C/O</option>
+
+                                </select> &nbsp;
+                                <input name="txtGname" type="text" id="txtGname" style="width:300px;" /><span
+                                    id="RequiredFieldValidator2" style="visibility:hidden;">Enter Gaurdian Name</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="50px"></td>
+                            <td width="200px">
+                                <h6><i> Gender / Age*</i></h6>
+                            </td>
+                            <td width="18px">
+                                <h5><b> :</b></h5>
+                            </td>
+                            <td width="650px">
+                                <select name="ddGender" id="ddGender" style="width:75px;">
+                                    <option selected="selected" value=""></option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+
+                                </select>&nbsp; <input name="txtAge" type="text" id="txtAge" style="width:50px;" />
+                                <span id="RequiredFieldValidator3" style="visibility:hidden;">Enter Patient Age</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="50px"></td>
+                            <td width="200px">
+                                <h6><i> Patient's Occupation</i></h6>
+                            </td>
+                            <td width="18px">
+                                <h5><b> :</b></h5>
+                            </td>
+                            <td width="650px">
+                                <select name="ddOcupation" id="ddOcupation" style="width:200px;">
+                                    <option selected="selected" value="--Select--">--Select--</option>
+                                    <option value="ACCOUNTANT">ACCOUNTANT</option>
+                                    <option value="ACCOUNTS OFFICER">ACCOUNTS OFFICER</option>
+                                    <option value="ADM. OFFICER">ADM. OFFICER</option>
+                                    <option value="ADVOCATE">ADVOCATE</option>
+                                    <option value="AGENT">AGENT</option>
+                                    <option value="AGRICULTURE">AGRICULTURE</option>
+                                    <option value="AIR FORCE">AIR FORCE</option>
+
+                                    <option value="OTHER">OTHER</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="50px"></td>
+                            <td width="200px">
+                                <h6><i> Address*</i></h6>
+                            </td>
+                            <td width="18px">
+                                <h5><b> :</b></h5>
+                            </td>
+                            <td width="650px">
+                                <input name="txtAddress" type="text" id="txtAddress" style="width:380px;" />
+                                <span id="RequiredFieldValidator4" style="visibility:hidden;">Enter Address</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="50px"></td>
+                            <td width="200px">
+                                <h6><i> City*</i></h6>
+                            </td>
+                            <td width="18px">
+                                <h5><b> :</b></h5>
+                            </td>
+                            <td width="650px">
+                                <input name="txtCity" type="text" id="txtCity" style="width:200px;" />
+                                <span id="RequiredFieldValidator5" style="visibility:hidden;">Enter City</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="50px"></td>
+                            <td width="200px">
+                                <h6><i> State*</i></h6>
+                            </td>
+                            <td width="18px">
+                                <h5><b> :</b></h5>
+                            </td>
+                            <td width="650px">
+                                <select name="ddState" id="ddState" style="width:200px;">
+                                    <option selected="selected" value="--Select--">--Select--</option>
+                                    <option value="Andra Pradesh">Andra Pradesh</option>
+                                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                    <option value="Assam">Assam</option>
+                                    <option value="Bihar">Bihar</option>
+                                    <option value="Chhattisgarh">Chhattisgarh</option>
+                                    <option value="Goa">Goa</option>
+                                    <option value="Gujarat">Gujarat</option>
+                                    <option value="Haryana">Haryana</option>
+                                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                    <option value="Jharkhand">Jharkhand</option>
+                                    <option value="Karnataka">Karnataka</option>
+                                    <option value="Kerala">Kerala</option>
+                                    <option value="Madya Pradesh">Madya Pradesh</option>
+                                    <option value="Maharashtra">Maharashtra</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="50px"></td>
+                            <td width="200px">
+                                <h6><i> PIN Code*</i></h6>
+                            </td>
+                            <td width="18px">
+                                <h5><b> :</b></h5>
+                            </td>
+                            <td width="650px">
+                                <input name="txtPIN" type="text" id="txtPIN" style="width:100px;" />
+                                <span id="RequiredFieldValidator6" style="visibility:hidden;">Enter PIN</span>
+                                <span id="RegularExpressionValidator1" style="visibility:hidden;">Invalid PIN
+                                    Code</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="50px"></td>
+                            <td width="200px">
+                                <h6><i> Mobile No.*</i></h6>
+                            </td>
+                            <td width="18px">
+                                <h5><b> :</b></h5>
+                            </td>
+                            <td width="650px">
+                                <input name="txtMobile" type="text" id="txtMobile" style="width:200px;" />
+                                <span id="RegularExpressionValidator2" style="visibility:hidden;">Invalid Mobile
+                                    No.</span>
+                                <span id="RequiredFieldValidator7" style="visibility:hidden;">Enter Mobile No</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="50px"></td>
+                            <td width="200px">
+                                <h6><i> Email-ID*</i></h6>
+                            </td>
+                            <td width="18px">
+                                <h5><b> :</b></h5>
+                            </td>
+                            <td width="650px">
+                                <input name="txtEmail" type="text" id="txtEmail" style="width:300px;" />
+                                <span id="RegularExpressionValidator3" style="visibility:hidden;">Invalid Email
+                                    ID</span>
+                                <span id="RequiredFieldValidator8" style="visibility:hidden;">Enter Email</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="50px"></td>
+                            <td width="200px">
+                                <h6><i> Narrate briefly your problem</i></h6>
+                            </td>
+                            <td width="18px">
+                                <h5><b> :</b></h5>
+                            </td>
+                            <td width="650px">
+                                <textarea name="txtprob" rows="2" cols="20" id="txtprob"
+                                    style="height:47px;width:300px;">
+                         </textarea>
+
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td width="50px"></td>
+                            <td width="200px">
+                                <h5><i></i></h5>
+                            </td>
+                            <td width="18px">
+                                <h5><b> </b></h5>
+                            </td>
+                            <td width="650px" style="vertical-align: middle">
+
+                                <span><input id="ckbox" type="checkbox" name="ckbox" /></span>&nbsp;&nbsp;
+                                <a style="font-size:larger;" target="_blank" href="#">Accept Terms and Conditions</a>
+                                <span id="CustomValidator1" style="visibility:hidden;">*</span>
+                            </td>
+                        </tr>
+                        <br>
+
+                        <!--     <tr>
+                            <td width="50px"></td>
+                            <td width="200px"></td>
+                            <td width="18px"></td>
+                            <td width="650px">
+                                <script>
+                                    $(document).ready(function() {
+                                        alert("msg");
+
+                                    });
+                                </script>
+                                <script>
+                                    $(document).ready(function() {
+                                        $("#click1".click(function() {
+                                            alert("msg");
+                                        }))
+                                    })
+                                </script>
+                                <input type="submit" name="btnPayment" value="Submit" id="btnPayment" style="background-color:blueviolet;font-weight:bold;height:30px;width:150px;" />
+                            -->
+
+
+
+                        <tr>
+                            <td width="50px"></td>
+                            <td width="200px"></td>
+                            <td width="18px"></td>
+                            <td width="650px">
+                                <input type="submit" name="btnPayment" value="Submit" id="btnPayment"
+                                    style="background-color:blueviolet;font-weight:bold;height:30px;width:150px;" />
+
+                        </tr>
+                        <!--
+                                <input type=" submit " name="btnSubmit " value="Submit " onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnSubmit&quot;, &quot;&quot;, true, &quot;v&quot;, &quot;&quot;, false, false))
+                                    " id="btnSubmit " style="background-color:#CC0000;font-weight:bold;width:100px; "
+                                /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="submit " name="btnReset " value="Reset " onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnReset&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))
+                                    " id="btnReset " style="color:#CC0000;font-weight:bold;width:100px; "
+                                />-->
+                        </td>
+                        </tr>
+            </form>
+            </table>
+        </div>
+        </div>
+    </center>
+
+
+
+</body>
+
+</html>
